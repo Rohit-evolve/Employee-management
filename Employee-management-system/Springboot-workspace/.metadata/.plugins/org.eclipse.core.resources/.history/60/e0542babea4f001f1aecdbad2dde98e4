@@ -1,0 +1,19 @@
+package com.emp.www.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.emp.www.repository.EmployeRepository;
+
+@RestController
+public class EmployeController 
+{
+  @Autowired	
+  EmployeRepository repo;
+  
+  public List<Employe> getAllEmploye()
+  {
+	  return 
+  }
+
+}

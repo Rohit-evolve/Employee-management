@@ -1,0 +1,5 @@
+package www.emp.com.exception;
+
+public class ResourceNotFoundException {
+
+}

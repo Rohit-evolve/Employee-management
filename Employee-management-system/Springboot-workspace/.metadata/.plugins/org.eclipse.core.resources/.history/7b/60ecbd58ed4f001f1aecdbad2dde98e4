@@ -1,0 +1,28 @@
+package com.emp.www.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.emp.www.service.EmployeService;
+
+import www.emp.com.model.Employee;
+
+@RestController
+
+@RequestMapping("/employe")
+public class EmployeController
+{
+  @Autowired	
+  EmployeService ser;
+  
+  @GetMapping("/findAll")
+  public List<Employe> getAllemployee()
+  {
+	  return ser.getAllemployee();
+  }
+
+}
